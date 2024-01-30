@@ -24,9 +24,9 @@ fetch(queryURL)
     var todayHead = $("<h1>").text("Today, " + currentDate + ", in " + name);
     var icon = $("<img>"); 
     icon.attr("src", iconURL + iconCode + ".png");
-    var todayTempC = $("<p>").text("Temp (C) = " + tempC);
+    var todayTempC = $("<p>").text("Temp (C) = " + tempC.toFixed(2));
     var todayHumidity = $("<p>").text("Humidity = " + humidity + "%");
-    var todayWindSpeed = $("<p>").text("Wind speed = " + windSpeed);
+    var todayWindSpeed = $("<p>").text("Wind speed = " + windSpeed + "MPH");
 
     // append today's data to page
     today.append(todayHead);
@@ -49,9 +49,9 @@ fetch(queryURL)
     var tomHead = $("<h1>").text(nextDay + " " + name);
     var tomicon = $("<img>"); 
     tomicon.attr("src", iconURL + iconCodeTom + ".png");
-    var tomTempC = $("<p>").text("Temp (C) = " + tempCtom);
+    var tomTempC = $("<p>").text("Temp (C) = " + tempCtom.toFixed(2));
     var tomHumidity = $("<p>").text("Humidity = " + humiditytom + "%");
-    var tomWindSpeed = $("<p>").text("Wind speed = " + windSpeedtom);
+    var tomWindSpeed = $("<p>").text("Wind speed = " + windSpeedtom + "MPH");
 
     // append tomorrow's data to page
     forecast.append(tomHead);
@@ -73,9 +73,9 @@ fetch(queryURL)
         var plusTwoHead = $("<h1>").text(Plus2 + ' ' + name);
         var plus2icon = $("<img>"); 
         plus2icon.attr("src", iconURL + iconplus2 + ".png");
-        var plusTwoTempC = $("<p>").text("Temp (C) = " + tempCplus2);
+        var plusTwoTempC = $("<p>").text("Temp (C) = " + tempCplus2.toFixed(2));
         var plusTwoHumidity = $("<p>").text("Humidity = " + humidityplus2 + "%");
-        var plusTwoWindSpeed = $("<p>").text("Wind speed = " + windSpeedplus2);
+        var plusTwoWindSpeed = $("<p>").text("Wind speed = " + windSpeedplus2 + "MPH");
     
         // append 2days's data to page
         forecast.append(plusTwoHead);
@@ -97,9 +97,9 @@ fetch(queryURL)
         var plusThreeHead = $("<h1>").text(plus3 + ' ' + name);
         var plus3icon = $("<img>"); 
         plus3icon.attr("src", iconURL + iconplus3 + ".png");
-        var plusThreeTempC = $("<p>").text("Temp (C) = " + tempCplus3);
+        var plusThreeTempC = $("<p>").text("Temp (C) = " + tempCplus3.toFixed(2));
         var plusThreeHumidity = $("<p>").text("Humidity = " + humidityplus3 + "%");
-        var plusThreeWindSpeed = $("<p>").text("Wind speed = " + windSpeedplus3);
+        var plusThreeWindSpeed = $("<p>").text("Wind speed = " + windSpeedplus3 + "MPH");
     
         // append 3days data to page
         forecast.append(plusThreeHead);
@@ -121,9 +121,9 @@ fetch(queryURL)
         var plusFourHead = $("<h1>").text(plus4 + ' ' + name);
         var plus4Icon = $("<img>"); 
         plus4Icon.attr("src", iconURL + iconplus4 + ".png");
-        var plusFourTempC = $("<p>").text("Temp (C) = " + tempCplus4);
+        var plusFourTempC = $("<p>").text("Temp (C) = " + tempCplus4.toFixed(2));
         var plusFourHumidity = $("<p>").text("Humidity = " + humidityplus4 + "%");
-        var plusFourWindSpeed = $("<p>").text("Wind speed = " + windSpeedplus4);
+        var plusFourWindSpeed = $("<p>").text("Wind speed = " + windSpeedplus4 + "MPH");
     
         // append 4days's data to page
         forecast.append(plusFourHead);
